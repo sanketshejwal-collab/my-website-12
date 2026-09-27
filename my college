@@ -1,0 +1,288 @@
+<h1>My Portfolio</h1>
+<p>I am learning web development.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Webpage</title>
+</head>
+<body>
+  <h1>Hello!</h1>
+  <p>This is my webpage.</p>
+</body>
+</html>
+<p>I enjoy GIS and Remote Sensing.</p>
+<a href="https://github.com/yourname">My GitHub</a>
+<section>
+  <h2>Projects</h2>
+  <article>
+    <h3>Vegetation Change Explorer</h3>
+    <p>This project uses satellite data.</p>
+  </article>
+</section>
+<!-- EDIT: Replace this with your own project description. -->
+<p>My project description goes here.</p>
+<h1>Your Name</h1>
+<h2>Projects</h2>
+<h3>Vegetation Change Explorer</h3>
+<p>This project analyses vegetation change.</p>
+<strong>Important result:</strong> vegetation increased.
+<a href="https://github.com/yourname">GitHub</a>
+<a href="assets/resume.pdf">View résumé</a>
+<a href="mailto:yourname@example.com">Email me</a>
+<a href="#projects">Jump to projects</a>
+<a href="#about">About</a>
+
+<section id="about">
+  ...
+</section>
+<img src="assets/profile.jpg" alt="Portrait of Your Name">
+portfolio/
+├── index.html
+├── assets/
+│   ├── profile.jpg
+│   ├── project-map.png
+│   └── resume.pdf
+└── README.md
+
+<ul>
+  <li><a href="#about">About</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#projects">Projects</a></li>
+</ul>
+<header>...</header>
+<main>
+  <section id="projects">
+    <article class="project-card">...</article>
+  </section>
+</main>
+<footer>...</footer>
+<section id="projects">
+  <article class="project-card">...</article>
+  <article class="project-card">...</article>
+  <article class="project-card">...</article>
+</section>
+
+h1 {
+  color: #1f6f5f;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+body { background: white; }          /* element selector */
+.project-card { padding: 20px; }      /* class selector */
+#projects { padding-top: 80px; }      /* id selector */
+.nav-links a { color: gray; }         /* descendant selector */
+.btn:hover { transform: translateY(-2px); } /* state */
+
+h1 {
+  color: blue;
+}
+
+p {
+  font-size: 18px;
+}
+:root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+--text: #172033;
+  --primary: #1f6f5f;
+  --accent: #e5a93d;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+.project-card {
+  padding: 20px;
+border: 1px solid #dfe6ef;
+  margin-bottom: 20px;
+}
+.container {
+  width: min(100%, 1180px);
+  margin-inline: auto;
+}
+
+section {
+  padding: 82px 22px;
+}
+body {
+  font-family: Inter, system-ui, sans-serif;
+  line-height: 1.65;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 7vw, 5.7rem);
+  font-weight: 900;
+  line-height: 0.98;
+}
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+<a class="btn btn-primary" href="#projects">Explore my work</a>
+<a class="btn btn-secondary" href="#">GitHub</a>
+.btn {
+  display: inline-flex;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 750;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn {
+  transition: transform 0.2s ease;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+}
+@media (max-width: 940px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+body.dark {
+  --bg: #0f1722;
+  --surface: #16202d;
+  --text: #edf3f8;
+  --primary: #67c8af;
+}
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="#home"><span>YN</span> / Portfolio</a>
+
+    <nav aria-label="Main navigation">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-kicker">Student • Geospatial Learner</div>
+      <h1>Hi, I’m <span>Your Name.</span></h1>
+      <p>I am a postgraduate student exploring GIS...</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">Explore my work</a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="about-grid">
+  <div class="about-copy">
+    <p>My interests lie at the intersection...</p>
+  </div>
+
+  <div class="quick-facts">
+    <div class="fact-card">
+      <strong>06+</strong>
+      <span>Geospatial projects</span>
+    </div>
+  </div>
+</div>
+<div class="skills-grid">
+  <article class="skill-card">
+    <div class="skill-icon">🗺️</div>
+    <h3>GIS & Cartography</h3>
+    <p>Spatial analysis, map design...</p>
+    <span class="tag">ArcGIS Pro</span>
+    <span class="tag">QGIS</span>
+  </article>
+</div>
+<article class="project-card">
+  <div class="project-thumb">🌱</div>
+  <div class="card-content">
+    <span class="tag">Remote Sensing</span>
+    <h3>Vegetation Change Explorer</h3>
+    <p>Describe the study, data, method and result.</p>
+    <div class="card-links">
+      <a class="card-link" href="#">Live project</a>
+      <a class="card-link" href="#">GitHub code</a>
+    </div>
+  </div>
+</article>
+<div class="dashboard-feature">
+  <div class="dashboard-preview">
+    <strong>Embed or preview your dashboard here</strong>
+  </div>
+
+  <div class="dashboard-copy">
+    <h2>Project / Dashboard Title</h2>
+    <p>Describe the dashboard...</p>
+    <a class="btn btn-primary" href="#">Open dashboard</a>
+  </div>
+</div>
+<iframe
+  src="YOUR-PUBLIC-DASHBOARD-URL"
+  width="100%"
+  height="500"
+  title="My interactive dashboard">
+</iframe
+<script>
+  // JavaScript goes here
+</script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+});
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  const darkMode = document.body.classList.contains("dark");
+  localStorage.setItem("portfolio-theme", darkMode ? "dark" : "light");
+});
+my-portfolio/
+├── index.html
+├── README.md
+└── assets/
+    ├── images/
+    │   ├── profile.jpg
+    │   ├── project-01.png
+    │   └── project-02.png
+    ├── documents/
+    │   └── resume.pdf
+    └── certificates/
+        └── certificate-01.pdf
+<img src="assets/images/project-01.png" alt="Project map">
+<a href="assets/documents/resume.pdf">View résumé</a>
+
+
+
+
+button.addEventListener("click", () => {
+  alert("Hello!");
+});
